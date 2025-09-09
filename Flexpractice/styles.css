@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box ;
+}
+
+.container{
+    height: 400px;
+    /* width: 500px; */
+    border: 2px solid green;
+    display: flex;
+    flex-direction: row;
+    /* margin: 1px;
+    padding: 100px; */
+    flex-wrap: wrap;
+    /* justify-content: flex-start; justify-content means main axis -horizontal axis
+    justify-content: end;           align-content means cross axis -vertical axis
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between; */
+    justify-content: center;
+
+    /* align-items: flex-start;
+    align-items: center;
+    align-items: end;
+    align-items: stretch; */
+    align-items: center;
+    
+    /* gap: 10px; */
+    /* align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-between;
+    align-content: space-around; */
+    /* align-content: space-evenly; */
+    align-content: flex-start;
+    
+
+}
+
+.box{
+    border:1px solid brown;
+    background-color: aqua;
+    width: 150px;
+    flex-basis: 50%;
+
+    /* flex-basis: 100px;  flex items ki width increase kar jati hai */
+    /* width: 100px; */
+}
+
+#box1{
+    order: 1;
+    /* align-self: flex-start; */
+    /* flex-grow: 1; */
+    /* flex-shrink:4; */
+}
+#box3{
+    order: 8;
+    /* align-self: flex-end; */
+    /* flex-grow: 1; */
+    /* flex-shrink: 4; */
+}
+#box2{
+    order: 4;
+    /* align-self: stretch; */
+    
+}
